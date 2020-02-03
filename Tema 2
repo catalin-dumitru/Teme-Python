@@ -1,4 +1,23 @@
-# Ex 1.
+"""Citeste de la tastatura un numar x
+- afiseaza pe ecran suma cifrelor sale.
+- daca toate cifrele sale sunt pare, afiseaza un mesaj care sa arate asta
+- afiseaza numarul cifrelor pare si impare ale lui x 
+- afiseaza suma cifrelor pare si suma cifrelor impare 
+- afiseaza daca numarul este palindrom* sau nu (palindrom = citind cifrele sale de la dreapta la st芒nga se ob牛ine acela艧i num膬r ex 12321)
+
+
+Citeste de la tastatura numere pana se citeste valoarea 0. apoi:
+- Sa se afiseze cel mai mare numar citit de la tastatura 
+- Sa se afiseze suma numerelor impare citite
+- Sa se afiseze numarul maxim de numere citite consecutiv crescator 
+(exemplu:
+1 2 3 0 -> 3 numere (1 2 3)
+1 2 0 3 4 5 -> 3 numere (3 4 5)
+5 3 2 0 -> 0 numere 
+5 3 1 2 -> 2 numere (1 2)
+)"""
+
+
 
 number = int(input("Pick a number: "))
 
