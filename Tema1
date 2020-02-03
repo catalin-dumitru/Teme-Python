@@ -1,0 +1,11 @@
+import random
+generated = random.randint(0,100)
+while True:
+    x = int(input("introdu numarul:"))
+    if   x < generated:
+        print ("Caut un numar mai mare:")
+    elif x > generated:
+        print ("Caut un numar mai mic:")
+    elif x == generated:
+        print ("Corect!")
+        break
