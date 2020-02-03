@@ -18,6 +18,7 @@ Citeste de la tastatura numere pana se citeste valoarea 0. apoi:
 )"""
 
 
+Ex.1 
 
 number = int(input("Pick a number: "))
 
