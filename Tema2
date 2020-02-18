@@ -1,35 +1,12 @@
-"""Citeste de la tastatura un numar x
-- afiseaza pe ecran suma cifrelor sale.
-- daca toate cifrele sale sunt pare, afiseaza un mesaj care sa arate asta
-- afiseaza numarul cifrelor pare si impare ale lui x 
-- afiseaza suma cifrelor pare si suma cifrelor impare 
-- afiseaza daca numarul este palindrom* sau nu (palindrom = citind cifrele sale de la dreapta la st芒nga se ob牛ine acela艧i num膬r ex 12321)
-
-
-Citeste de la tastatura numere pana se citeste valoarea 0. apoi:
-- Sa se afiseze cel mai mare numar citit de la tastatura 
-- Sa se afiseze suma numerelor impare citite
-- Sa se afiseze numarul maxim de numere citite consecutiv crescator 
-(exemplu:
-1 2 3 0 -> 3 numere (1 2 3)
-1 2 0 3 4 5 -> 3 numere (3 4 5)
-5 3 2 0 -> 0 numere 
-5 3 1 2 -> 2 numere (1 2)
-)"""
-
-
 Ex.1 
 
 number = int(input("Pick a number: "))
-
 par = []
 impar = []
 i = 0
-
 reverse_number = str(number)[::-1]
 if number == int(reverse_number):
     print("Number is a palindrome!")
-
 while number != 0:
     x = number % 10
     if x % 2 == 0:
@@ -39,22 +16,16 @@ while number != 0:
     i += x
     number = int(number / 10)
 print("Suma cifrelor: ", i)
-
-
 if len(impar) == 0:
     print("Toate cifrele sunt pare.\nNmarul cifrelor este: {} iar suma : {}". format(len(par), i))
-
 else:
     print("Numarul cifrelor pare: {} iar suma lor {}".format(len(par), sum(par)))
     print("Numarul cifrelor impare: {} iar suma lor {}".format(len(impar), sum(impar)))
-
-
+    
 # Ex 2.
-
 nr = []
 i = 0
 max_number = 0
-
 while True:
     num = int(input("Pick a number "))
     nr.append(num)
@@ -64,7 +35,6 @@ while True:
         i += num
     if num == 0:
         break
-
 r = 0
 pozMax = []
 count = 0
@@ -75,6 +45,4 @@ for r in range(len(nr)-1):
         pozMax.append(count)
         count = 1
     r += 1
-
-
 print("Nr maxim: {} Suma nr impare e: {} iar numarul maxim de numere cosecutive: {}".format(max_number, i, max(pozMax)))
